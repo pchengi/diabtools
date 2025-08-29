@@ -22,13 +22,13 @@ if avg is not None:
         avg_ifcc = avg/18
         dcct=(avg_mgdl+46.7)/28.7
         hba1c=dcct*10.93-23.5
-        print("Input average blood glucose: %d mg/dl (%0.1f mmol)")%(int(avg),avg_ifcc)
+        print("Input average blood glucose: %d mg/dl (%0.1f mmol)"%(int(avg),avg_ifcc))
         print("The computed hbA1C value is %.1f%% (IFCC %d mmol/mol)"%(dcct,int(hba1c)))
     else:
         avg_mgdl = avg*18
         dcct=(avg_mgdl+46.7)/28.7
         hba1c=dcct*10.93-23.5
-        print("Input average blood glucose: %0.1f mmol/l (%d mg/dl)")%(avg,int(avg_mgdl))
+        print("Input average blood glucose: %0.1f mmol/l (%d mg/dl)"%(avg,int(avg_mgdl)))
         print("The computed hbA1C value is %d mmol/mol(DCCT %.1f%%)"%(int(hba1c),dcct))
 else:
     if isdcct:
